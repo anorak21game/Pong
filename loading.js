@@ -5,7 +5,7 @@ function loadJSFile(folder, ...jsFile) {
         let className = jsFile[index];
         let path = "../" + folder + "/" + className + ".js";
         script.src = path;
-        document.getElementById("sourceCode").appendChild(script); 
+        document.body.appendChild(script); 
     }
 }
 
