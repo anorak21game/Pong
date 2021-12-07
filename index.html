@@ -3,45 +3,20 @@
 
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  
   <title>Pong</title>
-  <link rel="stylesheet/less" type="text/css" href="style/main.less">
+  
+  <!-- LESS STYLE -->
+  <link rel="stylesheet/less" type="text/css" href="style/style.less">
   <script src="style/less.js"></script>
+  
+  <!-- SOURCE CODE -->
+  <script type="module" src="./src/main.js"></script>
 </head>
 
 <body>
-  <!-- Playground -->
-  <section id="fullscreen"></section>
-
-  <!-- Load library of functions, classes and source code -->
-  <script>
-    /* Load files function */
-    function load(folder, ...jsFile) {
-      for (let index = 0; index < jsFile.length; index++) {
-        let script = document.createElement("script");
-        let className = jsFile[index];
-        let path = folder + "/" + className + ".js";
-        script.src = path;
-        document.body.appendChild(script);
-      }
-    }
-
-    /* Add playground */
-    function playground() {
-      const FULLSCREEN = document.getElementById("fullscreen");
-      const PLAYGROUND = document.createElement("div");
-
-      PLAYGROUND.setAttribute("id", "playground");
-
-      let screenHeight = FULLSCREEN.offsetHeight;
-      let screenWidth = FULLSCREEN.offsetWidth;
-
-      FULLSCREEN.appendChild(PLAYGROUND);
-    }
-
-    /* Load classes and source code */
-    load("class", "fullscreen", "playground", "ball", "paddle");
-    load("src", "main");
-  </script>
+  <!-- SCREEN -->
 </body>
-
 </html>

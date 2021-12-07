@@ -1,4 +1,4 @@
-class Paddle {
+export class Paddle {
     constructor(name) {
         this._name = name;
     }

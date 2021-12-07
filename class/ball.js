@@ -1,4 +1,4 @@
-class Ball {
+ export class Ball {
     constructor(name) {
         this._name = name;
     }
