@@ -1,15 +1,36 @@
 export class Screen {
-    constructor(obj) {
-        this.obj = obj;
+    constructor(rootObject) {
+        this.root = rootObject;
+
+        this.monitorScreen = this.createElement('div', 'monitor-screen');
+        this.playGround = this.createElement('div', 'play-ground');
+
+        this.monitorScreen.append(this.playGround);
+        this.root.append(this.monitorScreen);
     }
 
-    get element() {
-        return window.document.getElementById("screen");
+    createElement(tag, className) {
+        const element = document.createElement(tag);
+        if (className) element.classList.add(className);
+
+        return element;
     }
 
-    init() {
-        this.screen = document.createElement("section");  
-        this.screen.setAttribute("id", "screen");       
-        this.obj.appendChild(this.screen);
+    getElement(selector) {
+        const element = document.querySelector(selector);
+
+        return element;
+    }
+
+    scaleElement(scaleX, scaleY, element) {
+        let top = '';
+        let right = '';
+        let bottom = '';
+        let left = '';
+
+        element.style.marginTop = top;
+        element.style.marginRiight = right;
+        element.style.marginBottom = bottom;
+        element.style.marginLeft = left;
     }
 }
