@@ -1,0 +1,23 @@
+{
+  "name": "pong",
+  "version": "1.0.0",
+  "description": "game",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anorak21game/Pong.git"
+  },
+  "keywords": [
+    "pong",
+    "game"
+  ],
+  "author": "pixelschubser",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anorak21game/Pong/issues"
+  },
+  "homepage": "https://github.com/anorak21game/Pong#readme"
+}
