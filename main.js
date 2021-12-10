@@ -1,10 +1,13 @@
 "use strict";
 
-const fs = require('fs');
-let data = fs.readFileSync('test.txt');
-console.log(data.toString());
+// var vm = require("vm");
+// var fs = require("fs");
 
-// import { Screen } from "../class/Screen.js";
+// var data = fs.readFileSync('./file.js');
+// const script = new vm.Script(data);
+// script.runInThisContext();
 
-// const root = document.querySelector('#root');
-// const screen = new Screen(root);
+import { Screen } from "../class/Screen.js";
+
+const root = document.querySelector('#root');
+const screen = new Screen(root);

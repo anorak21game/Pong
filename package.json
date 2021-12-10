@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/anorak21game/Pong#readme",
   "dependencies": {
-    "fs": "*"
+    "fs": "*",
+    "vm": "^0.1.0"
   }
 }
