@@ -1,13 +1,13 @@
 "use strict";
 
-import { Playground } from "../class/Playground.js";
+import { Screen } from "../class/Screen.js";
 
 const root = document.querySelector('#root');
-const playground = new Playground(root);
+const screen = new Screen(root);
 
-playground.aspectRatio(12, 9);
+screen.aspectRatio(12, 9);
 
 /* Test */
 let test = document.createElement('div');
 test.classList.add('test');
-playground.screen.append(test);
+screen.format.append(test);
