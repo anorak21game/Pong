@@ -1,13 +1,13 @@
 "use strict";
 
-// var vm = require("vm");
-// var fs = require("fs");
-
-// var data = fs.readFileSync('./file.js');
-// const script = new vm.Script(data);
-// script.runInThisContext();
-
-import { Screen } from "../class/Screen.js";
+import { Playground } from "../class/Playground.js";
 
 const root = document.querySelector('#root');
-const screen = new Screen(root);
+const playground = new Playground(root);
+
+playground.aspectRatio(12, 9);
+
+/* Test */
+let test = document.createElement('div');
+test.classList.add('test');
+playground.screen.append(test);
